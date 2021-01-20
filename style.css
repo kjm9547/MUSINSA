@@ -1,0 +1,62 @@
+*{border:1px solid black;
+}
+html,body{
+    height:100%;
+    min-height: 0%;
+}
+.container{
+    display:grid;
+    grid-template-columns: 100% 50%;
+    grid-template-rows:451px 451px;
+}
+.cell-a{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 0 20%;
+    
+}
+#qr_login{
+    width: 179px;
+    height: 48px;
+    background-color: white;
+    border: 1px solid limegreen;
+    font-weight: bold;
+    font-size:14px;
+    
+}
+#content_zone{
+    border:1px solid black;
+    box-sizing:content-box;
+    
+    margin:0 auto;
+    vertical-align: middle;
+    height: auto;
+}
+/* id + password + login */
+#id_box{
+    box-sizing: border-box;
+    margin:0 0 10px  0;
+    width:80%;
+    height:48px;
+    display: block;
+    border:1px solid green;
+}
+#password_box{
+    box-sizing: border-box;
+    padding:10px;
+    margin:0 0 10px  0;
+    width:374px;
+    height:48px;
+    display: block;
+    border:1px solid green;
+}
+
+#login_bt{
+    margin:0 0 10px  0;
+    width:374px;
+    height:48px;
+    background-color: limegreen;
+    color:white;
+    font-size:24px;
+    font-weight: bold;
+}
