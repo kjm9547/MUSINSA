@@ -4,59 +4,79 @@ html,body{
     height:100%;
     min-height: 0%;
 }
-.container{
-    display:grid;
-    grid-template-columns: 100% 50%;
-    grid-template-rows:451px 451px;
-}
-.cell-a{
-    grid-row-start: 1;
-    grid-row-end: 4;
-    padding: 0 20%;
-    
-}
-#qr_login{
-    width: 179px;
-    height: 48px;
-    background-color: white;
-    border: 1px solid limegreen;
-    font-weight: bold;
-    font-size:14px;
-    
-}
-#content_zone{
-    border:1px solid black;
-    box-sizing:content-box;
-    
-    margin:0 auto;
+#outbox{
+    height: 100%;
     vertical-align: middle;
-    height: auto;
+    background-color:lightgray;
 }
-/* id + password + login */
-#id_box{
+/* 레이아웃 설정 */
+.container{
+    background-color:white;
+    margin: 0 auto;
+    width: 462px;
+    height: 100%;
+    display:grid;
+    grid-template: 2fr 7fr 1fr /1fr 1fr 1fr 1fr;    
+    grid-template-areas: 
+        'header header header header'
+        'section section section section'
+        'footer footer footer footer';
     box-sizing: border-box;
-    margin:0 0 10px  0;
-    width:80%;
-    height:48px;
-    display: block;
-    border:1px solid green;
+    padding: 0 20px;
+}
+/* 헤더 스타일 */
+header{
+    grid-area: header;
+    text-align: center;
+    
+}
+#musinsa_logo{
+    box-sizing: border-box;
+    padding: 13% 0 0 0 ;
+}
+#musinsa_logo > h1 {
+    font-size: 22px;
+}
+#musinsa_logo > h1 > span{
+    font-weight: lighter;
+}
+/* 콘텐츠 스타일 */
+section{
+    grid-area: section;
+}
+#login_box{
+    height: auto;
+    text-align: center;
+}
+#id_box{
+    width:70%;
+    height:40px;
+    margin: 0 auto;
+    
+    
 }
 #password_box{
-    box-sizing: border-box;
-    padding:10px;
-    margin:0 0 10px  0;
-    width:374px;
-    height:48px;
+    width:70%;
+    height:40px;
+    margin: 0 auto;
     display: block;
-    border:1px solid green;
+    margin: 10px auto ;
 }
-
-#login_bt{
-    margin:0 0 10px  0;
-    width:374px;
-    height:48px;
-    background-color: limegreen;
+#log_button{
+    width:71%;
+    height: 50px;
+    background-color:black;
     color:white;
-    font-size:24px;
-    font-weight: bold;
+    
+
+}
+#auto_log{
+        display: block;
+        margin: 10px 0;
+}
+/* auto_log 수정 필요 >>> 네이버 로그인 페이지 참고 */
+/*푸터 스타일  */
+footer{
+    grid-area: footer;
+    
 }
