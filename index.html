@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <link rel = "stylesheet" href="style.css">
-        
+        <script src="data.js" defer>
+        </script>
         <title>MUSINSA</title>
     </head>
     <body>
@@ -17,16 +18,31 @@
                 <section>
                     <div id="login_box">
                         <input id="id_box" placeholder= "   아이디를 입력해 주세요.">
-                        <input id="password_box" placeholder="   비밀번호를 입력해 주세요.">
+                        <input id="password_box" type="password" placeholder="   비밀번호를 입력해 주세요.">
                         <button id="log_button">로그인</button>
-                        <input type="radio" id="auto_log">자동로그인
-                        <a href="" id="sign_up">회원가입</a>
+                        <label id="lb">
+                            <input type="radio" id="auto_log" name="자동로그인" >자동로그인
+                        </label>
+                        <ul id="info_list">
+                            <li><a href="" id="sign_up">회원가입</a></li>
+                            <li><a href="" id="search_id">아이디 찾기</a></li>
+                            <li id=last_li><a href="" id="search_password">비밀번호 찾기</a></li>
+                        </ul>
+                        <button id="kakao_log"><img src="카카오.png"> 카카오 로그인</button>
+                        <button id="apple_log"><img src="애플.png"> Apple 로그인</button>
+                        <ul id="buy_info_check">
+                            <li id="buy_bt"><button>비회원 구매하기</button></li>
+                            <li id="check_order"><button>비회원 주문 조희</button></li>                            
+                        </ul>
+                        
+                        
                     </div>
                     <div id="login_social">
 
                     </div>
+                    <!--회원 구매 약관 관련 디브 새로 만들어야 함  -->
                     <div id="logup_infor">
-
+                        
                     </div>    
                 </section>
                 <footer>footer</footer>
