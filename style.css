@@ -1,23 +1,17 @@
-/* *{
-    border:1px solid black;
-} */
+
 html,body{
     height:100%;
     min-height: 0%;
-}
-#outbox{
-    height: 100%;
-    vertical-align: middle;
-    background-color:lightgray;
+    background-color:rgb(236, 235, 235);
 }
 /* 레이아웃 설정 */
 .container{
     background-color:white;
     margin: 0 auto;
     width: 462px;
-    height: 100%;
+    height: auto;
     display:grid;
-    grid-template: 2fr 7fr 1fr /1fr 1fr 1fr 1fr;    
+    grid-template: 1.7fr 7fr 1.3fr /1fr 1fr 1fr 1fr;    
     grid-template-areas: 
         'header header header header'
         'section section section section'
@@ -44,7 +38,6 @@ header{
 /* 콘텐츠 스타일 */
 section{
     grid-area: section;
-   
     
 }
 #login_box{
@@ -72,14 +65,16 @@ section{
     background-color:black;
     color:white;
     margin: 20px auto 10px auto;
-
+    font-weight: bold;
+    font-size:18px;
 }
 
 #auto_log{
-    vertical-align: sub;
+        vertical-align: sub;
         width:20px;
         height: 20px;
         margin: 10px 5px 10px 60px;
+        
         
 }
 #info_list{
@@ -127,28 +122,67 @@ section{
     border-radius: 8px 8px;
     font-weight: bold;
 }
-#buy_info_check > li{
+#log_info{
+    box-sizing: border-box;
+    padding: 0 70px;
+    overflow: hidden;
+    height: auto;
+}
+#buy_info_check{
     list-style: none;
-    float: left;
 }
 #buy_bt{
-    width:35%;
-    margin: 10px 0 0 34px; 
+    float: left;
+    width:50%;
+    height: 45px;
 }
+
 #check_order{
-    width:35%;
-    margin: 10px 0 0 0;
+    float: left;
+    width:50%;
+    height:45px;
 }
-#buy_bt > button{
+.clear{
+    clear: both;
+}
+#log_info > p{
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 14px;
+}
+#buy_info{
     width:100%;
-    height: 40px;
 }
-#check_order > button{
-    width: 100%;
-    height: 40px;
+#true_file{
+    vertical-align: sub;
+    width:20px;
+    height: 20px;
+    margin: 10px 0;
+}
+#buy_nonuser{
+    display: block;
+    width:100%;
+    height: 50px;
+    background-color:black;
+    color:white;
+    margin: 20px auto 10px auto;
+    font-weight: bold;
+    font-size:18px;
 }
 /*푸터 스타일  */
 footer{
+    height: auto;
     grid-area: footer;
     
+}
+#other_zone{
+    box-sizing: border-box;
+    padding: 80px 60px 0 60px;
+}
+
+#user_ul > li{
+    list-style: none;
+    float: left;
+    font-size: 14px;
+    margin: 0 6px 0 0;
 }
